@@ -1,0 +1,20 @@
+[
+  {
+    "testCase": "Usuario bloqueado por el sistema",
+    "username": "locked_out_user",
+    "password": "secret_sauce",
+    "expectedError": "Epic sadface: Sorry, this user has been locked out."
+  },
+  {
+    "testCase": "Intento de ingreso sin Password",
+    "username": "standard_user",
+    "password": "",
+    "expectedError": "Epic sadface: Password is required"
+  },
+  {
+    "testCase": "Intento de ingreso sin User",
+    "username": "",
+    "password": "secret_sauce",
+    "expectedError": "Epic sadface: Username is required"
+  }
+]
